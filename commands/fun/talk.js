@@ -3,7 +3,8 @@ const commando = require('discord.js-commando');
 const oneLine = require('common-tags').oneLine;
 const { RichEmbed } = require('discord.js');
 const apiai = require('apiai');
-const app = apiai("4328f50ade974d6abde23c9bfe471622");
+const config = require(`../../config.json`)
+const app = apiai(config.apiai);
 
 module.exports = class EchoCommand extends commando.Command {
   constructor(client) {

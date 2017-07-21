@@ -3,10 +3,10 @@ const commando = require('discord.js-commando');
 const path = require('path');
 const oneLine = require('common-tags').oneLine;
 const sqlite = require('sqlite');
-//const config = require('./config.json')
+const config = require('./config.json')
 
 const client = new commando.Client({
-	owner: '251383432331001856',
+	owner: ['251383432331001856', '197891949913571329'],
 	commandPrefix: 'c!'
 });
 
@@ -62,4 +62,4 @@ client.registry
 	.registerDefaults()
 	.registerCommandsIn(path.join(__dirname, 'commands'));
 
-client.login("MzM2MzEzNTQ0MzczMDQzMjEx.DE2f6g.nXhW8HMCnNp56LYg3nQaZr-CYvs");
+client.login(config.token);
