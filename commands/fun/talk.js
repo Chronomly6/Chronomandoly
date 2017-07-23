@@ -29,7 +29,7 @@ module.exports = class EchoCommand extends commando.Command {
 
   //eslint-disable-next-line class-methods-use-this
   async run(message, args) {
-    var request = app.textRequest(args.ToTalk, {
+    let request = app.textRequest(args.ToTalk, {
         sessionId: 'CHRONO_IS_BEST'
     });
  
