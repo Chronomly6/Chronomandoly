@@ -10,4 +10,4 @@ Just don't.
 
 # Contributing
 
-Also a DON'T!
+Also a don't!
